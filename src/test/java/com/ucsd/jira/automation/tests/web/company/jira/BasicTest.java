@@ -13,9 +13,13 @@ import static com.pwc.logging.service.LoggerService.GIVEN;
 import static com.pwc.logging.service.LoggerService.SCENARIO;
 import static com.pwc.logging.service.LoggerService.THEN;
 import static com.pwc.logging.service.LoggerService.WHEN;
+import static com.ucsd.jira.automation.data.Constants.DASHBOARD_DIV;
 
 
 public class BasicTest extends JiraTestCase {
+
+//    private static final String DASHBOARD_DIV = ;
+//    private static final String DASHER_DIV = ;
 
     @Override
     public void beforeMethod() {
@@ -40,7 +44,7 @@ public class BasicTest extends JiraTestCase {
         redirect(Constants.HOME_URL);
 
         THEN("The expected pages are displayed");
-        webAction(Constants.DASHBOARD_DIV);
+        webAction(DASHBOARD_DIV );
 
         redirect(Constants.HOME_URL);
 

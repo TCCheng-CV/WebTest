@@ -38,6 +38,8 @@ public final class Constants {
 
     // STATIC Text
     public static final String NO_RECORDS_FOUND_TEXT = "No records found, try new search criteria.";
+    public static final String SUMMARY_TEXT = "Summary Issue for JIRA";
+    public static final String DESCRIPTION_TEXT = "Description of the issue in JIRA";
 
     //DIV Elements
     public static final String VARIABLE_BY_TEXT_DIV = "//div[text()='%s']";
@@ -45,10 +47,26 @@ public final class Constants {
     public static final String BOARDS_SEARCH_PREVIEW_DIV = "//div[@aria-label='Boards']";
     public static final String PROJECTS_SEARCH_PREVIEW_DIV = "//div[@aria-label='Projects']";
 
-    public static final String ISSUES_AND_FILTERS_DIV = "//*[@id='navigation-app']/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[3]/a/div[2]/div";
-    public static final String DASHBOARD_DIV = "//*[@id=\"navigation-app\"]/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[1]/a/div[2]/div";
-    public static final String PROJECTS_DIV = "//*[@id=\"jira-frontend\"]/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/a/div[2]/div";
+    public static final String ISSUES_AND_FILTERS_DIV = "/html/body/div[1]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[5]/a/div[2]/div";
+    public static final String DASHBOARD_DIV = "/html/body/div[1]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/a/div[2]/div";
+    public static final String PROJECTS_DIV = "//*[@id=\'jira-frontend\']/div[1]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[2]/a/div[2]/div";
 
+    public static final String CREATE_ISSUE_BUTTON = "//*[@id='createGlobalItem']";
+    public static final String SUMMARY_INPUT = "//*[@id='summary']";
+    public static final String CREATE_BUTTON = "//*[@id=\'create-issue-submit\']";
+    public static final String DESCRIPTION_TEXTAREA = "//*[@id=\'description\']";
+
+    public static final String ISSUE_FILTER_BUTTON = "//*[@id=\"helpPanelContainer\"]/div/div[2]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[5]/a";
+    public static final String CREATE_RECENTLY_BUTTON = "/html/body/div[1]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div/div[10]/a/div/div";
+
+    public static final String SEARCH_QUERY_TEXTAREA = "//*[@id=\'searcher-query\']";
+
+    public static final String INITIATE_SEARCH = "//*[@id=\'global-issue-navigator-container\']/div[2]/div/form/div[1]/div[1]/div[1]/div[1]/div/div[1]/ul/li[7]/button";
+    //*[@id="aui-flag-container"]/div/div/a
+//*[@id="global-issue-navigator-container"]/div[2]/div/form/div[1]/div[1]/div[1]/div[1]/div/div[1]/ul/li[7]/button
+//*[@id="global-issue-navigator-container"]/div[2]/div/div/div/div/div/div/div/div
+    public static final String SEARCH_ID_INPUT = "//*[@id='jira']/div[9]/div[2]/div[4]/div/div[2]/div/div/div/div[1]/div/div/input";
+    public static final String SEARCH_ISSUE_SPAN = "//*[@id='jira']/div[9]/div[2]/div[4]/div/div[2]/div/div/div/div[2]/a/span[2]/span[1]";
     private Constants() {
     }
 
